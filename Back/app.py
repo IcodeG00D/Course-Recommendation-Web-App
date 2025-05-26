@@ -58,7 +58,6 @@ def top_courses_by_subject(subject):
 def store_user():
     data = request.get_json()
     user_name = data.get("name")
-    # subject = data.get("subject")
 
     if not user_name:
         return jsonify({"error": "Missing name"}), 400
@@ -66,17 +65,25 @@ def store_user():
     try:
         conn = get_db_connection()
         cur = conn.cursor()
-        cur.execute(
-            "INSERT INTO users (user_name) VALUES (%s)",
-            (user_name,),
-        )
+
+        cur.execute("SELECT * FROM users WHERE user_name = %s", (user_name,))
+        existing_user = cur.fetchone()
+
+        if existing_user:
+            cur.close()
+            conn.close()
+            return jsonify({"message": "User already exists"})
+
+        cur.execute("INSERT INTO users (user_name) VALUES (%s)", (user_name,))
         conn.commit()
+
         cur.close()
         conn.close()
         return jsonify({"message": "User stored successfully"})
     except Exception as e:
         print("Error in /store_user:", e)
         return jsonify({"error": "Database error"}), 500
+
 
 @app.route('/enroll_course', methods=['POST'])
 def enroll_course():
