@@ -1,0 +1,48 @@
+services:
+  db:
+    image: postgres:15
+    container_name: postgres_container
+    restart: always
+    environment:
+      POSTGRES_USER: myuser
+      POSTGRES_PASSWORD: mypass
+      POSTGRES_DB: coursedb
+    volumes:
+      - db_data:/var/lib/postgresql/data
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+    ports:
+      - "5432:5432"
+    networks:
+      - backend_net
+
+  backend:
+    build: ./Back
+    container_name: backend_container
+    depends_on:
+      - db
+    environment:
+      DB_HOST: db
+      DB_PORT: 5432
+      DB_NAME: coursedb
+      DB_USER: myuser
+      DB_PASS: mypass
+    ports:
+      - "5000:5000"
+    networks:
+      - backend_net
+
+  frontend:
+    build: ./Front
+    container_name: frontend_container
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend
+    networks:
+      - backend_net
+
+volumes:
+  db_data:
+
+networks:
+  backend_net:

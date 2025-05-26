@@ -1,0 +1,262 @@
+body {
+  background: #0664c9;
+  background: linear-gradient(0deg, rgba(6, 100, 201, 1) 0%, rgba(255, 255, 255, 1) 100%);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+}
+
+.app-container {
+  padding-top: 80px;
+  /* same or slightly more than navbar height */
+  min-height: 100vh;
+  padding-left: 20px;
+  /* padding-top: 80px; */
+  padding-right: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  /* changed from center to top align */
+  flex-direction: column;
+}
+
+.card {
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.41);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5.6px);
+  -webkit-backdrop-filter: blur(5.6px);
+  border: 1px solid rgba(255, 255, 255, 1);
+  max-width: 500px;
+  width: 100%;
+  padding: 60px;
+  
+
+}
+
+.title {
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.subtitle {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.input,
+.select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+.button {
+  width: 100%;
+  padding: 12px;
+  background-color: #007bff;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+
+.courses-container {
+  max-width: 1200px;
+  width: 100%;
+  padding: 20px;
+}
+
+.courses-title {
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.highlight {
+  color: #007bff;
+}
+
+.course-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.course-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease;
+}
+
+.course-card:hover {
+  transform: translateY(-4px);
+}
+
+.course-card img {
+  width: 100%;
+  height: 180px;
+  /* You can adjust this height */
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 12px;
+}
+
+.course-card h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.course-card p {
+  margin: 4px 0;
+  color: #444;
+  font-size: 14px;
+}
+
+.enroll-button {
+  margin-top: 10px;
+  background-color: #28a745;
+}
+
+.enroll-button:hover {
+  background-color: #1e7e34;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  /* left and right aligned */
+  align-items: center;
+  /* vertical center */
+  padding: 0 20px;
+  background-color: #20232a;
+  color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+/* Navbar specific button styles */
+.navbar-button {
+  padding: 8px 16px;
+  background-color: #007bff;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+  margin: 10px;
+  transition: background-color 0.3s ease;
+  width: auto;
+  /* override global .button width:100% */
+  min-width: 100px;
+  /* optional for consistent button size */
+  max-width: 160px;
+  /* optional max width */
+  text-align: center;
+}
+
+.navbar-button:hover {
+  background-color: #0056b3;
+}
+
+.button {
+  padding: 8px 16px;
+  background-color: #007bff;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+
+.text-muted {
+  color: gray;
+  font-size: 0.9rem;
+}
+
+.centered-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.homefeed-wrapper {
+  padding: 20px 20px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-title {
+  text-align: left;
+  margin-bottom: 30px;
+  font-size: 40px;
+}
+
+.recommendation-grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.course-tile {
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.course-tile img {
+  width: 100%;
+  height: 160px;
+  /* control image height */
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 12px;
+}
+
+.enroll-button {
+  margin-top: 12px;
+  padding: 10px 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.enroll-button:hover {
+  background-color: #0056b3;
+}

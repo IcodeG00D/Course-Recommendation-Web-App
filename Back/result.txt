@@ -1,0 +1,95 @@
+Enter your name: abj
+Hi abj, please select your preferred study area (subject).
+1. Business Finance
+2. Graphic Design
+3. Musical Instruments
+4. Web Development
+Enter subject number: 3
+
+You selected: Musical Instruments
+
+Top 20 courses in Musical Instruments:
+19421: Free Beginner Electric Guitar Lessons (Subscribers: 101154)
+238934: Pianoforall - Incredible New Way To Learn Piano & Keyboard (Subscribers: 75499)
+41884: Getting Started with Playing Guitar (Subscribers: 47652)
+42271: Complete Guitar System - Beginner to Advanced (Subscribers: 32935)
+26956: Learn Guitar in 21 Days (Subscribers: 26504)
+456284: The Professional Guitar Masterclass (Subscribers: 21701)
+583752: Introduction to Piano - By PGN Piano! (Subscribers: 14922)
+59922: Best Beginner Guitar Lessons by Sam Lyons (Subscribers: 14560)
+198690: Acoustic Guitar Basics (Subscribers: 14495)
+484670: Guitar Super System Level 1 (Subscribers: 10869)
+953152: The Complete Piano & Music Theory Beginners Course (Subscribers: 10435)
+1191750: Jazz Guitar Tips, Tricks and Licks (Subscribers: 9351)
+645202: The Total Beginner's Guitar Course (Subscribers: 9193)
+200598: LEARN HARMONICA, amaze your friends and have fun - it's easy (Subscribers: 8857)
+101496: How To Play Blues Guitar - Broonzy & McGhee Blues Lessons (Subscribers: 8240)
+99324: Acoustic Blues Guitar Lessons (Subscribers: 8217)
+1132342: Ultimate Beginner Guitar Masterclass (Subscribers: 8113)
+194692: Quicklessons Piano Course - Learn to Play Piano by Ear! (Subscribers: 7178)
+76524: A new approach to piano and playing songs for beginners (Subscribers: 7140)
+409818: Get started playing blues harmonica (Subscribers: 6853)
+
+Enter the number of an enrolled course (or 'done' to finish): 409818
+
+Enter the number of an enrolled course (or 'done' to finish): 99324
+
+Enter the number of an enrolled course (or 'done' to finish): done
+
+Enter completion % for each enrolled course:
+Completion % for 'Get started playing blues harmonica' (Musical Instruments): 30
+Completion % for 'Acoustic Blues Guitar Lessons' (Musical Instruments): 70
+
+Automatically selected the course with highest completion %: 'Acoustic Blues Guitar Lessons'
+
+Hi abj, you started the course 'Acoustic Blues Guitar Lessons'.
+
+Home feed - Recommended courses for you:
+- Acoustic Blues Guitar Lessons (Musical Instruments)
+- Acoustic Blues Guitar Lessons (Musical Instruments)
+- Beginner Acoustic Guitar Lessons (Musical Instruments)
+- Acoustic Guitar Lessons For Beginners (Musical Instruments)
+- Acoustic Guitar After The Basics (Musical Instruments)
+- Get started playing blues harmonica (Musical Instruments)
+- Getting Started with Playing Guitar (Musical Instruments)
+- Playing Piano : Reading and Playing Classical Tunes Vol.I (Musical Instruments)
+- Have Fun with Beginner Blues Piano (Musical Instruments)
+- Learn to Build Web Apps using D3JS (Web Development)
+- Uso Básico de Adobe Photoshop (Graphic Design)
+- Trading: Basics of Trading for Beginners (Business Finance)
+
+Type the name of another course to start it or 'exit' to quit: exit
+Goodbye!
+---------------------------------------------------------
+Hi abj, you started the course 'Acoustic Blues Guitar Lessons'.
+
+Home feed - Recommended courses for you:
+- Starting to play the blues on your harmonica in easy steps  (Musical Instruments)
+- Learn CSS Transition and Animation  (Web Development)
+- Blues Guitar Lessons - Ragtime Blues Guitar (Musical Instruments)
+- Getting Started with Playing Guitar (Musical Instruments)
+- How to Create Vector Characters in Illustrator or Photoshop (Graphic Design)
+- Options Trading Basics (3-Course Bundle) (Business Finance)
+- Acoustic Guitar Lessons For Beginners (Musical Instruments)
+- Blues and Advanced Guitar Lessons (Musical Instruments)
+- Blues Guitar Fundamentals (Musical Instruments)
+- How to Fund your Million Dollar Idea: Equity, Debt, Unfund (Business Finance)
+- Beginner Acoustic Guitar Lessons (Musical Instruments)
+- WordPress Development - Themes, Plugins & Single Page Apps (Web Development)
+
+------------------------------
+Hi abj, you started the course 'Acoustic Blues Guitar Lessons'.
+
+Home feed - Recommended courses for you:
+- Beginner Acoustic Guitar Lessons (Musical Instruments)
+- Stock Market - Swing Trading Strategies for Wall Street (Business Finance)
+- Getting Started with Playing Guitar (Musical Instruments)
+- Starting to play the blues on your harmonica in easy steps  (Musical Instruments)
+- Acoustic Guitar Lessons For Beginners (Musical Instruments)
+- Blues Guitar Fundamentals (Musical Instruments)
+- How to make Business Cards like a Pro (Graphic Design)
+- Blues and Advanced Guitar Lessons (Musical Instruments)
+- The Complete Financial Statement Analysis Course (Business Finance)
+- Blues Guitar Lessons - Ragtime Blues Guitar (Musical Instruments)
+- Django Tutorial: Build Your First App Fast & Free!  (Web Development)
+- AJAX Development (Web Development)
