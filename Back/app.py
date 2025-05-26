@@ -228,7 +228,7 @@ def update_progress():
         conn = get_db_connection()
         cur = conn.cursor()
 
-        # Get user_id
+        # Getting user_id
         cur.execute("SELECT id FROM users WHERE user_name = %s", (user_name,))
         user = cur.fetchone()
 
