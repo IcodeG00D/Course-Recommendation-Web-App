@@ -111,6 +111,8 @@ This will build images (if not already built) and start all containers with netw
 ```bash
 docker-compose down
 ```
+![Recommender Flowchart](Repo_Images/flowchart.png)
+
 
 ---
 
