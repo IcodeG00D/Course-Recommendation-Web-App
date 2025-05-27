@@ -138,9 +138,9 @@ docker-compose down
 * Dataset by AndrewMVd on Kaggle
 * Inspired by hybrid recommendation system concepts combining content-based filtering and user progress metrics
 * **Major Credits to :
-  * ** JTP International Teams
-  * Mr.Parit Chauhan (Head Of International Bussinesses, JTP)
-  * Mr.Jaishankar Iyer (Team Leader)
+  * **JTP International Teams**
+  * **Mr.Parit Chauhan Sir** (Head Of International Bussinesses, JTP)
+  * **Mr.Jaishankar Sir** (Team Leader)
   
  
 
@@ -160,6 +160,5 @@ docker-compose down
 **Q:** How to add more courses?
 **A:** Update the `udemy_courses.csv` dataset and rebuild the backend container.
 
----
 
 
