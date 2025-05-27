@@ -137,14 +137,15 @@ docker-compose down
 * **Developer:** Kushagra Pathak (GitHub: [IcodeG00D](https://github.com/IcodeG00D))
 * Dataset by AndrewMVd on Kaggle
 * Inspired by hybrid recommendation system concepts combining content-based filtering and user progress metrics
-* **Major Credits to :
+  
+* **Major Credits to :**
   * **JTP International Teams**
   * **Mr.Parit Chauhan Sir** (Head Of International Bussinesses, JTP)
   * **Mr.Jaishankar Sir** (Team Leader)
   
- 
 
 ---
+
 
 ## 10. Troubleshooting & FAQs
 
