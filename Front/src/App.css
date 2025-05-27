@@ -6,33 +6,39 @@ body {
 }
 
 .app-container {
-  background-image: url("../public/images/Bg.png");
-  background-size: cover;            /* Ensures the image covers the container */
-  background-position: center;       /* Centers the image */
-  background-repeat: no-repeat;      /* Prevents tiling */
-  padding-top: 80px;                 /* same or slightly more than navbar height */
+  /* background-image: url("../public/images/a.jpg"); */
+  background-size: cover;
+  /* Ensures the image covers the container */
+  background-position: center;
+  /* Centers the image */
+  background-repeat: no-repeat;
+  /* Prevents tiling */
+  padding-top: 80px;
+  /* same or slightly more than navbar height */
   min-height: 100vh;
   padding-left: 20px;
   padding-right: 20px;
   display: flex;
   justify-content: center;
-  align-items: flex-start;           /* align content to top */
+  align-items: flex-start;
+  /* align content to top */
   flex-direction: column;
 }
 
 
 .card {
   /* From https://css.glass */
-  background: rgba(255, 255, 255, 0.41);
+  /* From https://css.glass */
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.68);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(5.6px);
-  -webkit-backdrop-filter: blur(5.6px);
-  /* border: 1px solid rgba(255, 255, 255, 1); */
+  backdrop-filter: blur(8.4px);
+  -webkit-backdrop-filter: blur(8.4px);
   max-width: 500px;
   width: 100%;
   padding: 60px;
-  
+
 
 }
 
@@ -98,7 +104,13 @@ body {
 }
 
 .course-card {
-  background: #fff;
+  /* From https://css.glass */
+
+  background: rgba(255, 255, 255, 0.68);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(8.4px);
+  -webkit-backdrop-filter: blur(8.4px);
   border-radius: 12px;
   padding: 20px;
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
@@ -150,9 +162,15 @@ body {
   align-items: center;
   /* vertical center */
   padding: 0 20px;
-  background-color: #20232a;
+  /* From https://css.glass */
+  background: rgba(0, 0, 0, 0.68);
+  /* border-radius: 16px; */
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(8.4px);
+  -webkit-backdrop-filter: blur(8.4px);
+  /* background-color: #20232a; */
   color: white;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
   z-index: 1000;
 }
 
@@ -233,11 +251,15 @@ body {
 }
 
 .course-tile {
-  background-color: #f9f9f9;
+  background: rgba(255, 255, 255, 0.68);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(8.4px);
+  -webkit-backdrop-filter: blur(8.4px);
   border-radius: 12px;
   padding: 20px;
   text-align: center;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+
 }
 
 .course-tile img {
