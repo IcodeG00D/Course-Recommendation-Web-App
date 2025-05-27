@@ -7,7 +7,7 @@ An intelligent course recommendation system that personalizes learning paths bas
 
 **Key Features:**
 
-* Personalized recommendations via hybrid recommendation engine (content-based + user progress)
+* Personalized recommendations via hybrid recommendation engine **(content-based + user progress)**
 * Adaptive roadmap that adjusts suggestions based on course completion percentages
 * Backend API with Flask and PostgreSQL for user and enrollment management
 * React.js frontend for course selection, progress tracking, and dynamic recommendation feed
