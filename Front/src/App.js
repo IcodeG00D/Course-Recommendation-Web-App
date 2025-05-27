@@ -319,34 +319,39 @@ export default function App() {
       ) : (
         <>
           {step === 1 && (
-            <div className="centered-card">
-              <div className="card">
-                <h1 className="title">Welcome!</h1>
-                <input
-                  type="text"
-                  placeholder="Enter your name"
-                  className="input"
-                  value={name}
-                  onChange={(e) => setName(e.target.value)}
-                />
-                <h2 className="subtitle">Choose a subject:</h2>
-                <select
-                  className="select"
-                  value={selectedSubject}
-                  onChange={(e) => setSelectedSubject(e.target.value)}
-                >
-                  <option value="">-- Select a subject --</option>
-                  {subjects.map((subj) => (
-                    <option key={subj} value={subj}>
-                      {subj}
-                    </option>
-                  ))}
-                </select>
-                <button className="button" onClick={handleNext}>
-                  {loadingCourses ? "Loading..." : "Next"}
-                </button>
+            <>
+              <div className="centered-card">
+                <div className="card">
+                  <h1>
+                    Course Recommendation System
+                  </h1>
+                  <h1 className="title">Welcome!</h1>
+                  <input
+                    type="text"
+                    placeholder="Enter your name"
+                    className="input"
+                    value={name}
+                    onChange={(e) => setName(e.target.value)}
+                  />
+                  <h2 className="subtitle">Choose a subject:</h2>
+                  <select
+                    className="select"
+                    value={selectedSubject}
+                    onChange={(e) => setSelectedSubject(e.target.value)}
+                  >
+                    <option value="">-- Select a subject --</option>
+                    {subjects.map((subj) => (
+                      <option key={subj} value={subj}>
+                        {subj}
+                      </option>
+                    ))}
+                  </select>
+                  <button className="button" onClick={handleNext}>
+                    {loadingCourses ? "Loading..." : "Next"}
+                  </button>
+                </div>
               </div>
-            </div>
+            </>
           )}
 
           {step === 2 && (
