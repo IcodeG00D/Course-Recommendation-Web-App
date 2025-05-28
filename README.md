@@ -114,10 +114,22 @@ docker-compose down
 ```
 ![Recommender Flowchart](Repo_Images/fc.png)
 
+---
+## 7. UI Snapshots
+![Course selection ](Repo_Images/B.png)
+here you can select the courses which are sorted on the basis of popularity (most enrolled).
 
+![Course Enroll](Repo_Images/C.png)
+In Img C you can see all the enrolled courses are been visible in the Database Table which means its updating the Table in Real time.
+
+![Course selection ](Repo_Images/D.png)
+And here comes the homefeed with recommending all the courses on the basis of,
+* Enrolled Course (Title and Subject).
+* Most completed course (User showing interest).
+* 12 courses, 5 of More Completion Progress, 4 of Less Completeion Progress, 3 other subject course (for exploratory part).
 ---
 
-## 7. Contribution Guidelines
+## 8. Contribution Guidelines
 
 * Fork the repo and create feature branches for enhancements or fixes
 * Follow PEP8 for Python backend and standard React.js practices on frontend
@@ -127,7 +139,7 @@ docker-compose down
 
 ---
 
-## 8. License & Legal Notices
+## 9. License & Legal Notices
 
 * Licensed under the MIT License — see the `LICENSE` file
 * Dataset source: [Udemy Courses Dataset by AndrewMVd on Kaggle](https://www.kaggle.com/datasets/andrewmvd/udemy-courses)
@@ -135,7 +147,7 @@ docker-compose down
 
 ---
 
-## 9. Authors & Credits
+## 10. Authors & Credits
 
 * **Developer:** Kushagra Pathak (GitHub: [IcodeG00D](https://github.com/IcodeG00D))
 * Dataset by AndrewMVd on Kaggle
@@ -150,7 +162,7 @@ docker-compose down
 ---
 
 
-## 10. Troubleshooting & FAQs
+## 11. Troubleshooting & FAQs
 
 **Q:** Backend fails to connect to the database?
 **A:** Make sure the Docker `db` service is running and environment variables match in `docker-compose.yml`.
