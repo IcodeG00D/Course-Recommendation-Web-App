@@ -10,7 +10,7 @@ CORS(app)
 
 df = pd.read_csv("udemy_courses.csv")
 
-# PostgreSQL connection parameters from environment variables
+# PostgreSQL connection parameters 
 DB_HOST = os.getenv("DB_HOST", "localhost")
 DB_PORT = int(os.getenv("DB_PORT", 5432))
 DB_NAME = os.getenv("DB_NAME", "coursedb")
@@ -88,14 +88,14 @@ def store_user():
 @app.route('/enroll_course', methods=['POST'])
 def enroll_course():
     data = request.get_json()
-    print(f"📦 Received JSON: {data}")
+    print(f" Received JSON: {data}")
     user_name = data.get('user_name')
     course_name = data.get('course_name')
     c_subject = data.get('c_subject') 
 
-    print(f"👤 user_name: {user_name}")
-    print(f"📘 course_name: {course_name}")
-    print(f"📚 subject: {c_subject}")
+    print(f" user_name: {user_name}")
+    print(f" course_name: {course_name}")
+    print(f" subject: {c_subject}")
 
 
     if not user_name or not course_name:
@@ -105,7 +105,7 @@ def enroll_course():
         conn = get_db_connection()
         cur = conn.cursor()
 
-        # Get user_id from users table
+        # Get user_id from users existing db table
         cur.execute("SELECT id FROM users WHERE user_name = %s", (user_name,))
         user = cur.fetchone()
 
@@ -132,10 +132,9 @@ def enroll_course():
 @app.route('/unenroll_course', methods=['DELETE', 'OPTIONS'])
 def unenroll_course():
     if request.method == 'OPTIONS':
-        # Handle preflight CORS request
+        
         return '', 200
 
-    # existing DELETE handling code below
     data = request.get_json()
     user_name = data.get('user_name')
     course_name = data.get('course_name', '').strip()
@@ -209,7 +208,6 @@ def merged_enrollments(user_name):
         conn.close()
         print("Merged Data JSON:", merged_data)
         return jsonify(merged_data)
-
     except Exception as e:
         print("Error in /merged-enrollments:", e)
         return jsonify({"error": "Server error"}), 500

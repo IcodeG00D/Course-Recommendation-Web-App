@@ -19,7 +19,7 @@ const HomeFeed = ({
   useEffect(() => {
     let courseToUse = activeCourse;
 
-    // Fallback: use course with highest progress
+    // use course with highest progress
     if (!courseToUse && enrolledCourses.length > 0) {
       courseToUse = enrolledCourses.reduce((a, b) => {
         return (completionPercent[a.course_title] || 0) > (completionPercent[b.course_title] || 0)
