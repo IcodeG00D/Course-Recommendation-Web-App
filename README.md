@@ -118,10 +118,8 @@ docker-compose down
 ## 7. UI Snapshots
 ![Course selection ](Repo_Images/B.png)
 here you can select the courses which are sorted on the basis of popularity (most enrolled).
-
 ![Course Enroll](Repo_Images/C.png)
-In Img C you can see all the enrolled courses are been visible in the Database Table which means its updating the Table in Real time.
-
+In Img F you can see all the enrolled courses are been visible in the Database Table which means its updating the Table in Real time.
 ![Course selection ](Repo_Images/D.png)
 And here comes the homefeed with recommending all the courses on the basis of,
 * Enrolled Course (Title and Subject).
