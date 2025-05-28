@@ -12,7 +12,8 @@ An intelligent course recommendation system that personalizes learning paths bas
 * Backend API with Flask and PostgreSQL for user and enrollment management
 * React.js frontend for course selection, progress tracking, and dynamic recommendation feed
 * Dockerized multi-container architecture for easy deployment and scaling
-
+---
+![Welcome](Repo_Images/A.png)
 ---
 
 ## 2. Installation Instructions
