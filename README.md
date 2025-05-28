@@ -3,7 +3,7 @@
 ## 1. Project Title & Description
 
 **Course Recommendation Web App**
-An intelligent course recommendation system that personalizes learning paths based on user interests, course completion progress, and interaction history. The app dynamically recommends relevant courses, skill-based roadmaps, and related advanced technologies to enhance user upskilling journeys.
+An intelligent course recommendation system that personalizes learning paths based on <u>user interests, course completion progress, and interaction history</u>. The app dynamically recommends relevant courses, skill-based roadmaps, and related advanced technologies to enhance user upskilling journeys.
 
 **Key Features:**
 
@@ -84,7 +84,7 @@ environment:
 * **Database:** PostgreSQL (via official Docker image)
 * **Containerization:** Docker, Docker Compose
 * **Data Processing:** pandas, numpy
-
+For more info refer attatched [Documnetation].
 ---
 
 ## 6. Docker & Deployment Instructions
@@ -124,7 +124,7 @@ In Img F you can see all the enrolled courses are been visible in the Database T
 And here comes the homefeed with recommending all the courses on the basis of,
 * Enrolled Course (Title and Subject).
 * Most completed course (User showing interest).
-* 12 courses, 5 of More Completion Progress, 4 of Less Completeion Progress, 3 other subject course (for exploratory part).
+* **12** courses, **5** of More Completion Progress, **4** of Less Completeion Progress, **3** other subject course (for exploratory part).
 ---
 
 ## 8. Contribution Guidelines
@@ -139,7 +139,6 @@ And here comes the homefeed with recommending all the courses on the basis of,
 
 ## 9. License & Legal Notices
 
-* Licensed under the MIT License — see the `LICENSE` file
 * Dataset source: [Udemy Courses Dataset by AndrewMVd on Kaggle](https://www.kaggle.com/datasets/andrewmvd/udemy-courses)
 * Comply with third-party libraries' licenses as per dependencies
 
