@@ -84,7 +84,7 @@ environment:
 * **Database:** PostgreSQL (via official Docker image)
 * **Containerization:** Docker, Docker Compose
 * **Data Processing:** pandas, numpy
-For more info refer attatched [Documnetation].
+For more info refer attatched [Documnetation](Course_Recommend_Official_Documentation.pdf).
 ---
 
 ## 6. Docker & Deployment Instructions
