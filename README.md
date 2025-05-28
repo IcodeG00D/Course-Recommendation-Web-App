@@ -156,17 +156,11 @@ And here comes the homefeed with recommending all the courses on the basis of,
 
 ---
 
-## 9. License & Legal Notices
 
-* Dataset source: [Udemy Courses Dataset by AndrewMVd on Kaggle](https://www.kaggle.com/datasets/andrewmvd/udemy-courses)
-* Comply with third-party libraries' licenses as per dependencies
-
----
-
-## 10. Authors & Credits
+## 9. Authors & Credits
 
 * **Developer:** Kushagra Pathak (GitHub: [IcodeG00D](https://github.com/IcodeG00D))
-* Dataset by AndrewMVd on Kaggle
+* Dataset by [AndrewMVd on Kaggle](https://www.kaggle.com/datasets/andrewmvd/udemy-courses)
 * Inspired by hybrid recommendation system concepts combining content-based filtering and user progress metrics
   
 * **Major Credits to :**
@@ -178,7 +172,7 @@ And here comes the homefeed with recommending all the courses on the basis of,
 ---
 
 
-## 11. Troubleshooting & FAQs
+## 10. Troubleshooting & FAQs
 
 **Q:** Backend fails to connect to the database?
 **A:** Make sure the Docker `db` service is running and environment variables match in `docker-compose.yml`.
@@ -192,5 +186,4 @@ And here comes the homefeed with recommending all the courses on the basis of,
 **Q:** How to add more courses?
 **A:** Update the `udemy_courses.csv` dataset and rebuild the backend container.
 
-
-
+Thank you , for any suggestions please Drop here [LinkedIn](www.linkedin.com/in/kushagra-pathak-8b6390252)
