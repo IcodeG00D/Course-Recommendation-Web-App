@@ -103,7 +103,7 @@ environment:
 * **Containerization:** Docker, Docker Compose
 * **Data Processing:** pandas, numpy.
   
-# For more info refer attatched [Documnetation](Course_Recommend_Official_Documentation.pdf).
+### For more info refer attatched [Documnetation](Course_Recommend_Official_Documentation.pdf).
 ---
 
 ## 6. Docker & Deployment Instructions
