@@ -3,7 +3,7 @@
 ## 1. Project Description
 
 **Course Recommendation Web App**
-An intelligent course recommendation system that personalizes learning paths based on ==user interests, course completion progress, and interaction history==. The app dynamically recommends relevant courses, skill-based roadmaps, and related advanced technologies to enhance user upskilling journeys.
+An intelligent course recommendation system that personalizes learning paths based on <u>user interests, course completion progress, and interaction history</u>. The app dynamically recommends relevant courses, skill-based roadmaps, and related advanced technologies to enhance user upskilling journeys.
 
 **Key Features:**
 
