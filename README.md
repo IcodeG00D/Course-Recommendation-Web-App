@@ -1,6 +1,6 @@
 # Course Recommendation Web App
 
-## 1. Project Title & Description
+## 1. Project Description
 
 **Course Recommendation Web App**
 An intelligent course recommendation system that personalizes learning paths based on <u>user interests, course completion progress, and interaction history</u>. The app dynamically recommends relevant courses, skill-based roadmaps, and related advanced technologies to enhance user upskilling journeys.
@@ -12,6 +12,24 @@ An intelligent course recommendation system that personalizes learning paths bas
 * Backend API with Flask and PostgreSQL for user and enrollment management
 * React.js frontend for course selection, progress tracking, and dynamic recommendation feed
 * Dockerized multi-container architecture for easy deployment and scaling
+
+Unlike standard recommendations, our system adapts based on each **user's course completion progress**. This allows for more relevant and timely suggestions, encouraging continued learning.
+
+* **Why it’s different:** Goes beyond course history — it uses how much of a course the user has completed.
+
+* **Why included:** To guide users through a smart, personalized learning path.
+
+* **Impact:** Increases engagement by recommending courses aligned with current skill level and interest.
+
+* **Responsible Component:**
+
+Backend API: /recommend route
+
+Logic: generate_recommendations() in Recommend.py
+
+Progress Tracking: /update_progress endpoint + enrollments table
+
+
 ---
 ![Welcome](Repo_Images/A.png)
 ---
@@ -83,8 +101,10 @@ environment:
 * **Frontend:** React.js
 * **Database:** PostgreSQL (via official Docker image)
 * **Containerization:** Docker, Docker Compose
-* **Data Processing:** pandas, numpy
-For more info refer attatched [Documnetation].
+* **Data Processing:** pandas, numpy.
+* **Dataset:** [Udemy-Courses](https://www.kaggle.com/datasets/andrewmvd/udemy-courses)
+  
+### For more info refer attatched [Documentation](Course_Recommend_Official_Documentation.pdf).
 ---
 
 ## 6. Docker & Deployment Instructions
@@ -137,17 +157,11 @@ And here comes the homefeed with recommending all the courses on the basis of,
 
 ---
 
-## 9. License & Legal Notices
 
-* Dataset source: [Udemy Courses Dataset by AndrewMVd on Kaggle](https://www.kaggle.com/datasets/andrewmvd/udemy-courses)
-* Comply with third-party libraries' licenses as per dependencies
-
----
-
-## 10. Authors & Credits
+## 9. Authors & Credits
 
 * **Developer:** Kushagra Pathak (GitHub: [IcodeG00D](https://github.com/IcodeG00D))
-* Dataset by AndrewMVd on Kaggle
+* Dataset by [AndrewMVd on Kaggle](https://www.kaggle.com/datasets/andrewmvd/udemy-courses)
 * Inspired by hybrid recommendation system concepts combining content-based filtering and user progress metrics
   
 * **Major Credits to :**
@@ -159,7 +173,7 @@ And here comes the homefeed with recommending all the courses on the basis of,
 ---
 
 
-## 11. Troubleshooting & FAQs
+## 10. Troubleshooting & FAQs
 
 **Q:** Backend fails to connect to the database?
 **A:** Make sure the Docker `db` service is running and environment variables match in `docker-compose.yml`.
@@ -173,5 +187,4 @@ And here comes the homefeed with recommending all the courses on the basis of,
 **Q:** How to add more courses?
 **A:** Update the `udemy_courses.csv` dataset and rebuild the backend container.
 
-
-
+Thank you , for any suggestions please Drop here [LinkedIn](www.linkedin.com/in/kushagra-pathak-8b6390252)
