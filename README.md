@@ -12,6 +12,24 @@ An intelligent course recommendation system that personalizes learning paths bas
 * Backend API with Flask and PostgreSQL for user and enrollment management
 * React.js frontend for course selection, progress tracking, and dynamic recommendation feed
 * Dockerized multi-container architecture for easy deployment and scaling
+
+Unlike standard recommendations, our system adapts based on each **user's course completion progress**. This allows for more relevant and timely suggestions, encouraging continued learning.
+
+* Why it’s different: Goes beyond course history — it uses how much of a course the user has completed.
+
+* Why included: To guide users through a smart, personalized learning path.
+
+* Impact: Increases engagement by recommending courses aligned with current skill level and interest.
+
+* Responsible Component:
+
+Backend API: /recommend route
+
+Logic: generate_recommendations() in Recommend.py
+
+Progress Tracking: /update_progress endpoint + enrollments table
+
+
 ---
 ![Welcome](Repo_Images/A.png)
 ---
@@ -83,8 +101,9 @@ environment:
 * **Frontend:** React.js
 * **Database:** PostgreSQL (via official Docker image)
 * **Containerization:** Docker, Docker Compose
-* **Data Processing:** pandas, numpy
-For more info refer attatched [Documnetation](Course_Recommend_Official_Documentation.pdf).
+* **Data Processing:** pandas, numpy.
+  
+# For more info refer attatched [Documnetation](Course_Recommend_Official_Documentation.pdf).
 ---
 
 ## 6. Docker & Deployment Instructions
