@@ -15,13 +15,13 @@ An intelligent course recommendation system that personalizes learning paths bas
 
 Unlike standard recommendations, our system adapts based on each **user's course completion progress**. This allows for more relevant and timely suggestions, encouraging continued learning.
 
-* Why it’s different: Goes beyond course history — it uses how much of a course the user has completed.
+* **Why it’s different:** Goes beyond course history — it uses how much of a course the user has completed.
 
-* Why included: To guide users through a smart, personalized learning path.
+* **Why included:** To guide users through a smart, personalized learning path.
 
-* Impact: Increases engagement by recommending courses aligned with current skill level and interest.
+* **Impact:** Increases engagement by recommending courses aligned with current skill level and interest.
 
-* Responsible Component:
+* **Responsible Component:**
 
 Backend API: /recommend route
 
