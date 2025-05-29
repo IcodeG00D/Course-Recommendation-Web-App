@@ -46,9 +46,9 @@ Progress Tracking: /update_progress endpoint + enrollments table
 
    ```bash
    git clone https://github.com/IcodeG00D/Course-Recommendation-Web-App.git
-   cd Course-Recommendation-Web-App //build containers in root folder directory where docker-compose.yaml should be there.
+   cd Course-Recommendation-Web-App 
    ```
-
+   build containers in root folder directory where docker-compose.yaml should be there.
 2. **Ensure your `.env` or environment variables are properly set for database credentials (optional if overridden in Docker Compose).**
 
 3. **Build and start Docker containers:**
