@@ -94,10 +94,8 @@ USER--> SUBJECT-->COURSE-->ENROLL-->UPDATE PROGRESS-->RECOMMEND FEED-->ENROLL NE
 * Update Progress or Unenroll
 → User can: Continue progress and send updates (/update_progress) Or unenroll from a course (/unenroll_course)
 
-Data Stored in PostgreSQL
-→ All user activity is tracked in users and enrollments tables for personalized learning paths and future recommendations.
-* Use the frontend React app to register, select courses, and track progress.
-* The backend API handles recommendations based on course completion percentages and user input.
+* Data Stored in PostgreSQL → All user activity is tracked in users and enrollments tables for personalized learning paths and future recommendations.
+Use the frontend React app to register, select courses, and track progress.The backend API handles recommendations based on course completion percentages and user input.
 * Example backend endpoints include:
 
   * `POST /recommend` — Get personalized course recommendations
