@@ -5,6 +5,7 @@
 **Course Recommendation Web App**
 An intelligent course recommendation system that personalizes learning paths based on <u>user interests, course completion progress, and interaction history</u>. The app dynamically recommends relevant courses, skill-based roadmaps, and related advanced technologies to enhance user upskilling journeys.
 
+
 **Key Features:**
 
 * Personalized recommendations via hybrid recommendation engine **(content-based + user progress)**
@@ -46,9 +47,9 @@ Progress Tracking: /update_progress endpoint + enrollments table
 
    ```bash
    git clone https://github.com/IcodeG00D/Course-Recommendation-Web-App.git
-   cd Course-Recommendation-Web-App
+   cd Course-Recommendation-Web-App 
    ```
-
+   build containers in root folder directory where docker-compose.yaml should be there.
 2. **Ensure your `.env` or environment variables are properly set for database credentials (optional if overridden in Docker Compose).**
 
 3. **Build and start Docker containers:**
@@ -56,10 +57,17 @@ Progress Tracking: /update_progress endpoint + enrollments table
    ```bash
    docker-compose up --build
    ```
+   Incase:(issue occurs):
+   - Start the Docker Desktop App first, if Container shows any error while building.
+   - Try removing old volumes , and try again
+   ```bash
+   docker-compose down -v
+   ```
+   - Look for Docker-compose.yaml file should be there
 
-4. **Access the application:**
+5. **Access the application:**
 
-   * Frontend: [`http://localhost:3000`]( http://localhost:3000)
+   * Frontend: [`http://localhost:3000`]( http://localhost:3000) (For UI CLICK HERE)
    * Backend API: [`http://localhost:5000`]( http://localhost:5000)
 
 ---
