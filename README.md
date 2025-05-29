@@ -59,8 +59,8 @@ Progress Tracking: /update_progress endpoint + enrollments table
 
 4. **Access the application:**
 
-   * Frontend: `http://localhost:3000`
-   * Backend API: `http://localhost:5000`
+   * Frontend: [`http://localhost:3000`]( http://localhost:3000)
+   * Backend API: [`http://localhost:5000`]( http://localhost:5000)
 
 ---
 
