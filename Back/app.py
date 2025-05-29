@@ -201,7 +201,7 @@ def merged_enrollments(user_name):
                 "name": row[1],
                 "course": row[2],
                 "subject": row[3],
-                "progress": row[4]  # now including c_subject
+                "progress": row[4]  
             })
 
         cur.close()

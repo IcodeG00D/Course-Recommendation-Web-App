@@ -69,7 +69,7 @@ export default function App() {
       setProgress({});
       setShowMergedTable(false);
       setShowHomeFeed(false);
-      setStep(1); // temporarily reset step to avoid flashes of old UI
+      setStep(1); 
 
       fetch(`${API_URL}/store_user`, {
         method: "POST",
@@ -190,10 +190,10 @@ export default function App() {
         return res.json();
       })
       .then((data) => {
-        setMergedTableData(data); // assuming data is an array of objects
+        setMergedTableData(data); 
         setShowMergedTable(true);
         setShowHomeFeed(false);
-        setStep(0); // Hide other steps while showing merged table
+        setStep(0); 
       })
       .catch((err) => alert(err.message))
       .finally(() => setLoadingMergedTable(false));
