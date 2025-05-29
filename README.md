@@ -59,21 +59,50 @@ Progress Tracking: /update_progress endpoint + enrollments table
 
 4. **Access the application:**
 
-   * Frontend: `http://localhost:3000`
-   * Backend API: `http://localhost:5000`
+   * Frontend: [`http://localhost:3000`]( http://localhost:3000)
+   * Backend API: [`http://localhost:5000`]( http://localhost:5000)
 
 ---
 
 ## 3. Usage Guide
 
-* Use the frontend React app to register, select courses, and track progress.
-* The backend API handles recommendations based on course completion percentages and user input.
+USER--> SUBJECT-->COURSE-->ENROLL-->UPDATE PROGRESS-->RECOMMEND FEED-->ENROLL NEW COURSE-->MY COURSES-->UPDATE PROGRESS/DELETE COURSE--->DATA IN DB
+* User Registration / Identification
+→ User is identified (via /store_user) by name when they enter the platform.
+
+* Browse Subjects
+→ Available subjects are fetched (/subjects) to let the user explore interest areas.
+
+* Select & View Courses by Subject
+→ User selects a subject to view top courses (/top-courses/<subject>).
+
+* Enroll in a Course
+→ User enrolls in a course (/enroll_course) — data is stored in enrollments.
+
+* Update Course Progress
+→ As the user makes progress, updates are sent via /update_progress.
+
+* Receive Personalized Recommendations
+→ Recommendations adapt in real-time via /recommend based on the progress and interest (generate_recommendations() logic).
+
+* Enroll in New Recommended Course
+→ User selects another course from the feed and enrolls again.
+
+* My Courses View
+→ User can view all enrolled courses and current progress (/merged-enrollments/<user> or /enrollments/<user>).
+
+* Update Progress or Unenroll
+→ User can: Continue progress and send updates (/update_progress) Or unenroll from a course (/unenroll_course)
+
+* Data Stored in PostgreSQL → All user activity is tracked in users and enrollments tables for personalized learning paths and future recommendations.
+Use the frontend React app to register, select courses, and track progress.The backend API handles recommendations based on course completion percentages and user input.
 * Example backend endpoints include:
 
   * `POST /recommend` — Get personalized course recommendations
   * `POST /enroll_course` — Enroll a user in a course
   * `POST /update_progress` — Update course progress percentage
   * `GET /enrollments/<user_name>` — Fetch user enrollments and progress
+ Refer section 8.5 in attatched Offical Documents
 
 ---
 
@@ -104,7 +133,7 @@ environment:
 * **Data Processing:** pandas, numpy.
 * **Dataset:** [Udemy-Courses](https://www.kaggle.com/datasets/andrewmvd/udemy-courses)
   
-### For more info refer attatched [Documentation](Course Recommend Official Documentation.pdf).
+### For more info refer attatched [Documentation](Course_Recommend_Official_Documentation.pdf).
 ---
 
 ## 6. Docker & Deployment Instructions
