@@ -46,7 +46,7 @@ Progress Tracking: /update_progress endpoint + enrollments table
 
    ```bash
    git clone https://github.com/IcodeG00D/Course-Recommendation-Web-App.git
-   cd Course-Recommendation-Web-App
+   cd Course-Recommendation-Web-App (build containers in root folder directory where docker-compose.yaml should be there )
    ```
 
 2. **Ensure your `.env` or environment variables are properly set for database credentials (optional if overridden in Docker Compose).**
@@ -56,10 +56,17 @@ Progress Tracking: /update_progress endpoint + enrollments table
    ```bash
    docker-compose up --build
    ```
+   Incase:(issue occurs):
+   - Start the Docker Desktop App first, if Container shows any error while building.
+   - Try removing old volumes , and try again
+   - Look for Docker-compose.yaml file should be there
+   ```bash
+   docker-compose down -v
+   ```
 
-4. **Access the application:**
+5. **Access the application:**
 
-   * Frontend: [`http://localhost:3000`]( http://localhost:3000)
+   * Frontend: [`http://localhost:3000`]( http://localhost:3000) (For UI CLICK HERE)
    * Backend API: [`http://localhost:5000`]( http://localhost:5000)
 
 ---
