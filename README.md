@@ -216,4 +216,5 @@ And here comes the homefeed with recommending all the courses on the basis of,
 **Q:** How to add more courses?
 **A:** Update the `udemy_courses.csv` dataset and rebuild the backend container.
 
-Thank you , for any suggestions please Drop here [LinkedIn](www.linkedin.com/in/kushagra-pathak-8b6390252)
+---
+Thank you , Hope you liked the Project .
