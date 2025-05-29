@@ -102,6 +102,7 @@ Use the frontend React app to register, select courses, and track progress.The b
   * `POST /enroll_course` — Enroll a user in a course
   * `POST /update_progress` — Update course progress percentage
   * `GET /enrollments/<user_name>` — Fetch user enrollments and progress
+ Refer section 8.5 in attatched Offical Documents
 
 ---
 
