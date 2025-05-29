@@ -59,7 +59,7 @@ Progress Tracking: /update_progress endpoint + enrollments table
    ```
    Incase:(issue occurs):
    - Start the Docker Desktop App first, if Container shows any error while building.
-   - Try removing old volumes , and try again
+   - Try removing old volumes , and try again.
    ```bash
    docker-compose down -v
    ```
