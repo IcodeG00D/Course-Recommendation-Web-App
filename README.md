@@ -5,6 +5,7 @@
 **Course Recommendation Web App**
 An intelligent course recommendation system that personalizes learning paths based on <u>user interests, course completion progress, and interaction history</u>. The app dynamically recommends relevant courses, skill-based roadmaps, and related advanced technologies to enhance user upskilling journeys.
 
+
 **Key Features:**
 
 * Personalized recommendations via hybrid recommendation engine **(content-based + user progress)**
