@@ -69,7 +69,7 @@ Progress Tracking: /update_progress endpoint + enrollments table
 
    * Frontend: [`http://localhost:3000`]( http://localhost:3000) (For UI CLICK HERE)
    * Backend API: [`http://localhost:5000`]( http://localhost:5000)
-
+For detailed step instruction please refer to attached [Installation manual](Course_Recommend_Installation_Manual.pdf)
 ---
 
 ## 3. Usage Guide
