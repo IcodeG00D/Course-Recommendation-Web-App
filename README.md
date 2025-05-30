@@ -29,7 +29,7 @@ Backend API: /recommend route
 Logic: generate_recommendations() in Recommend.py
 
 Progress Tracking: /update_progress endpoint + enrollments table
-
+* Recommendation Feed : 12 courses, 5 of More Completion Progress, 4 of Less Completeion Progress, 3 other subject course (for exploratory part).
 
 ---
 ![Welcome](Repo_Images/A.png)
@@ -59,7 +59,7 @@ Progress Tracking: /update_progress endpoint + enrollments table
    ```
    Incase:(issue occurs):
    - Start the Docker Desktop App first, if Container shows any error while building.
-   - Try removing old volumes , and try again
+   - Try removing old volumes , and try again.
    ```bash
    docker-compose down -v
    ```
