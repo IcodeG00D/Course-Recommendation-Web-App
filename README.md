@@ -202,10 +202,6 @@ And here comes the homefeed with recommending all the courses on the basis of,
 * Dataset by [AndrewMVd on Kaggle](https://www.kaggle.com/datasets/andrewmvd/udemy-courses)
 * Inspired by hybrid recommendation system concepts combining content-based filtering and user progress metrics
   
-* **Major Credits to :**
-  * **JTP International Teams**
-  * **Mr.Parit Chauhan Sir** (Head Of International Bussinesses, JTP)
-  * **Mr.Jaishankar Sir** (Team Leader)
   
 
 ---
